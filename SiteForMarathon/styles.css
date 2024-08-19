@@ -105,3 +105,20 @@ body {
     height: 300px;
 }
 
+.map-container {
+    margin: 15px;
+    border-top: 1px solid grey;
+}
+
+.map-container h2 {
+    text-align: center;
+}
+
+.distance-image {
+    filter: saturate(1);
+}
+
+.distance-image:hover {
+    filter: saturate(2);
+}
+
