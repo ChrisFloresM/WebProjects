@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Site for Marathon</title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<title>Site for Marathon</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<main>
-		<h1>Welcome to Site for Marathon project</h1>
-		<p>First, a youtube video: </p>
-		<div class="iframe-container">
-			<iframe width="1159" height="652" src="https://www.youtube.com/embed/wnHW6o8WMas" title="NO EXCUSES - Best Motivational Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			<p>Now, meteoblue widget:</p>
+<main>
+	<div class="iframe-container youtube-container">
+		<iframe class="youtube" src="https://www.youtube.com/embed/RvaV7PX-Amgcontrols=0" title="BATTLE OF THE MIND - Running Motivation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<div class="video-overlay">
+			<h1 class="main-title">The run of your life awaits you</h1>
+			<button class="join-us" type="button">Join us!</button>
 		</div>
-		<div class="iframe-container">
-			<iframe src="https://www.meteoblue.com/en/weather/widget/daily/london_united-kingdom_2643743?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitationprobability=0&spot=0&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 378px; height: 420px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/london_united-kingdom_2643743?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
-		</div>
-	</main>
+	</div>
+	<div class="iframe-container">
+		<iframe class="weather" src="https://www.meteoblue.com/en/weather/widget/daily/london_united-kingdom_2643743?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitationprobability=0&spot=0&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" ></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/london_united-kingdom_2643743?utm_source=daily_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener"></a></div>
+	</div>
+	<div class="distance-container">
+		<h2 class="distance-container-header">Running Distances</h2>
+		<ul class="distance-list">
+			<li class="distance">
+				<img src="https://www.brooksrunning.com/on/demandware.static/-/Library-Sites-BrooksRunningShared/default/dwbf9c8949/cms-content/Project/ADT/Brooks-Running/EMEA/Blog/2023/August/how-to-run-for-longer/F23_RHB_How_to_run_for_longer_S.jpg" alt="Running image for 1KM run">
+				<div class="text-container">
+					<h2>1km Run</h2>
+					<p>This short and sweet 1km run is perfect for beginners or those who just want to have a bit of fun. Whether
+						you're looking to kickstart your fitness journey or simply enjoy a leisurely jog in the great outdoors, this
+						distance is a great way to get started.</p>
+				</div>
+			</li>
+			<li class="distance">
+
+				<img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/01/Runner-training-on-running-track-1296x728-header-1296x728.jpg?w=1155&h=1528" alt="Running image for 5KM run">
+				<div class="text-container">
+					<h2>5km Run</h2>
+					<p>With a distance of 5km, this run is a great challenge for beginner runners or those who want to improve
+						their fitness. Whether you're looking to increase your speed or endurance, this distance will test your
+						limits and help you reach your goals.</p>
+				</div>
+			</li>
+			<li class="distance">
+				<img src="https://www.hindustantimes.com/ht-img/img/2023/06/09/550x309/running_1686297363371_1686297373583.jpg" alt="Running image for 1KM run">
+				<div class="text-container">
+					<h2>10km Run</h2>
+					<p>The 10km run is a great intermediate distance that offers a challenge to runners who have already tackled
+						shorter races. With a mix of speed and endurance, this distance requires a bit more training and dedication,
+						but the sense of accomplishment you'll feel at the finish line will be well worth it.</p>
+				</div>
+			</li>
+			<li class="distance">
+				<img src="https://hips.hearstapps.com/hmg-prod/images/female-runner-running-at-summer-park-trail-healthy-royalty-free-image-1591373138.jpg" alt="Running image for 1KM run">
+				<div class="text-container"><h2>Half Marathon: 21km</h2>
+					<p>The half marathon is a major milestone for runners and requires dedicated training to complete. At a
+						distance of 21km, this run will push you to your limits both physically and mentally, but the feeling of
+						crossing the finish line is an experience like no other.</p></div>
+			</li>
+			<li class="distance">
+
+				<img src="https://t3.ftcdn.net/jpg/02/89/30/62/360_F_289306269_rJ04x9o9Dbv8zHcImf9kRZA08bVCimIP.jpg" alt="Running image for 1KM run">
+				<div class="text-container"><h2>Full Marathon: 42km</h2>
+					<p>The full marathon is the ultimate challenge for runners and requires months of intense training to
+						complete. With a distance of 42km, this run is not for the faint of heart, but for those who are willing to
+						put in the time and effort, the feeling of crossing the finish line is a truly unforgettable experience.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</main>
 </body>
 </html>
